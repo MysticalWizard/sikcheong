@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: '사다리 억까는 이제 그만!',
   authors: [{ name: '원식K' }],
   keywords: ['식당청소', '식청', '사다리타기', '랜덤', '뽑기', '원식K'],
-  metadataBase: new URL('https://sandbox.mystwiz.net/sikcheong'),
+  metadataBase: new URL('https://sandbox.mystwiz.net/'),
   alternates: {
     canonical: '/',
   },
