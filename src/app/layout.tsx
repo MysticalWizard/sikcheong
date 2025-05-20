@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: '식당청소 뺑뺑이 - 청소 당번 랜덤 뽑기',
-  description: '식당청소 당번을 랜덤으로 뽑아주는 웹 애플리케이션입니다.',
+  title: '식당청소 뺑뺑이',
+  description: '사다리 억까는 이제 그만!',
   authors: [{ name: '원식K' }],
-  keywords: ['식당청소', '청소 당번', '랜덤', '뽑기', '팀 구성'],
+  keywords: ['식당청소', '식청', '사다리타기', '랜덤', '뽑기', '원식K'],
   metadataBase: new URL('https://sandbox.mystwiz.net/sikcheong'),
   alternates: {
     canonical: '/',
