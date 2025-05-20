@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 식당청소 뺑뺑이 (Dining Hall Cleaning Duty Randomizer)
+
+A Next.js 15 application for randomly generating cleaning duty teams for each meal.
+
+## Features
+
+- Create random teams for meal duties based on a pool of participants
+- Set team size, number of rounds, and appearance constraints
+- Use date seeds to automatically determine the number of rounds based on weekday/weekend
+- Date-based navigation to plan duties for different days
+- Fair distribution of duties with customizable appearance limits
+- Clean, modern UI with Korean language support
+
+## Technical Details
+
+- Built with Next.js 15, React 19, and TypeScript 5.7
+- UI components from shadcn/ui with Tailwind CSS
+- Custom randomization algorithm based on Feistel network for deterministic, fair team selection
+- Responsive design for all device sizes
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository
+2. Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Configuration Options
 
-To learn more about Next.js, take a look at the following resources:
+- **참가자 명단 (Pool)**: Comma-separated list of participant names
+- **팀 크기 (Team Size)**: Number of participants per team (defaults to 4)
+- **라운드 수 (Rounds)**: Number of teams to generate (defaults to 1, or auto-determines based on date)
+- **최소 출현 횟수 (Min Appearances)**: Minimum times a participant should be selected (defaults to 0)
+- **최대 출현 횟수 (Max Appearances)**: Maximum times a participant can be selected (defaults to number of rounds)
+- **시드값 (Seed)**: Random seed for consistent results, can be a number or date in YYYYMMDD format
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Hosted at sandbox.mystwiz.net/sikcheong
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+원식K (mystwiz)
